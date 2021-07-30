@@ -1,4 +1,5 @@
-﻿$domain = get-addomain |select-Object distinguishedname
+﻿##Biswajeet###
+$domain = get-addomain |select-Object distinguishedname
 $domain = $domain.distinguishedname
 $OU = Read-Host -Prompt 'Provide the OU name like OU=User, for child OU-> OU=childOU,OU=ParentOU'
 $filename = $((Get-Date).ToString("yyyyMMdd_HHmmss"))+"_"+$ou
